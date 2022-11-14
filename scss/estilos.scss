@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "componentes/musica";
+@import "componentes/imagenes";
+@import "componentes/recitales";
+@import "componentes/contacto";
+@import "componentes/index";
+
+.body{
+    display: grid;
+
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+    
+    li{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+.main{
+    grid-area: main;
+    background-image: url(../img/rockandroll.arg.jpeg);
+
+}
+.footer{
+    h1, h4{
+        color: aqua;
+        font-weight: 700;
+        font-size: 35px;
+        margin: 30px;
+    }
+    h1{
+        text-align: center;
+    }
+
+
+    grid-area: footer;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.793) , rgb(0, 0, 0));
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas:"foot1 foot2";
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+
+//   VISTA MOBILE //
+
+
+@media only screen and (max-width: 768px){
+    .body{
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 230px 800px 260px;
+        grid-template-areas:"header"
+                            "nav"
+                            "main"
+                            "footer";
+    }
+    .nav{
+            background-image: linear-gradient(to top, rgb(109, 78, 172) , rgb(142, 61, 61));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: space-around;
+            align-items: center;
+
+            ul{
+                font-size: 25px;
+            }
+            img{
+                width: 160px;
+                height: 160px;
+            }
+    }
+    .footer{
+        grid-template-columns: 80% 15%;
+        grid-template-rows: 100%;
+        grid-template-areas:"foot1 foot2";
+        justify-content: space-around;
+        
+    }
+}
+
+
+
+
+
+// VISTA ESCRITORIO //
+
+
+@media only screen and (min-width: 768px){
+    .body{
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 80px 800px 200px;
+        grid-template-areas:"header"
+                            "nav"
+                            "main"
+                            "footer";
+    }
+    .nav{
+        
+        font-size: 27px;
+        background-image: linear-gradient(to top, rgb(109, 78, 172) , rgb(142, 61, 61));
+        ul{
+            width: 88%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: space-around;
+            align-items: center;
+        }
+    }
+    .footer{
+        img{
+            margin: 17px;
+        }
+    }
+}

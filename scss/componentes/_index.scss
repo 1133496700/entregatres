@@ -1,0 +1,25 @@
+.sectionindex{
+    h1{
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(10, 61, 61);
+        width:90%;
+        text-align: center;
+        border-radius: 40px;
+        font-size: 100px;
+        font-weight: 800;
+        position:relative;
+        left: 70px;
+        top: 220px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .sectionindex{
+        h1{
+            font-size: 70px;
+            left: 40px;
+            top: 220px;
+        }
+    }
+}

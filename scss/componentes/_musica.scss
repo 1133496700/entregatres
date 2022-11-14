@@ -1,0 +1,61 @@
+.mainmusica{
+    display: grid;
+
+}
+
+.mainmusica{
+    grid-template-columns:100%;
+    grid-template-rows: 800px 800px;
+    grid-template-areas:"music1"
+                        "music2";
+    justify-content: space-around;
+    align-content: space-around;
+    
+
+    .section1music{
+        grid-area: music1;
+
+        h1{
+            display: block;
+            color: rgb(23, 21, 26);
+            text-align: center;
+            background-color: blueviolet;
+            font-size: 47px;
+            font-weight: 900;
+            border-radius: 20px;
+            height: 71px;
+        }
+    
+    }
+    .section2music{
+        grid-area: music2;
+
+        h1{
+            display: block;
+            color: rgb(23, 21, 26);
+            text-align: center;
+            background-color: blueviolet;
+            font-size: 47px;
+            font-weight: 900;
+            border-radius: 20px;
+            height: 71px;
+        }
+    }
+}
+
+//   VISTA MOBILE //
+
+
+@media only screen and (max-width: 768px){
+    #bodymusic{
+        grid-template-rows: 70px 230px 2000px 260px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px){
+    #bodymusic{
+        grid-template-rows:120px 80px 2000px 200px;
+
+    }
+}

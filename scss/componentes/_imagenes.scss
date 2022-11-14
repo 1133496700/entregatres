@@ -1,0 +1,128 @@
+
+
+//   VISTA MOBILE //
+
+
+@media only screen and (max-width: 768px){
+
+    #bodyimg{
+        grid-template-rows: 70px 230px 3000px 260px;
+    }
+    .mainimg{
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-template-rows: 315px 315px 315px 315px 315px 315px 315px 315px 315px;
+        grid-template-areas:"img2 img2"
+                            "img3 img3"
+                            "img3 img3"
+                            "img4 img5"
+                            "img1 img1"
+                            "img1 img1"
+                            "img1 img1"
+                            "img6 img7"
+                            "img8 img9";
+    
+        justify-content: space-around;
+        align-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+    .image1{
+        height: 100%;
+        width: 100%;
+        grid-area: img1;
+        object-fit: cover;
+        
+        
+    }
+    .image2{
+        grid-area: img2;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+
+    }
+    .image3{
+        grid-area: img3;
+    }
+    .image4{
+        grid-area: img4;
+        object-fit: cover;
+    }
+    .image5{
+        grid-area: img5;
+        object-fit: cover;
+    }
+    .image6{
+        grid-area: img6;
+        object-fit: cover;
+    }
+    .image7{
+        grid-area: img7;
+        object-fit: cover;
+    }
+    .image8{
+        grid-area: img8;
+        object-fit: cover;
+    }
+    .image9{
+        grid-area: img9;
+        object-fit: cover;
+    }
+}
+
+
+
+
+// VISTA ESCRITORIO //
+
+
+@media only screen and (min-width: 768px){
+    #bodyimg{
+        grid-template-rows:120px 80px 2500px 200px;
+    }
+    .mainimg{
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-template-rows: 400px 400px 400px 400px 400px 200px;
+        grid-template-areas:"immg1 immg2"
+                            "immg3 immg4"
+                            "immg5 immg6"
+                            "immg7 immg8"
+                            "immg9 immg0"
+                            "immg10 immg11";
+
+        justify-content: space-around;
+        align-content: space-around;
+        
+    }
+    .image1{
+        grid-area: immg1; 
+    }
+    .image2{
+        grid-area: immg11;
+    }
+    .image3{
+        grid-area: immg2; 
+    }
+    .image4{
+        grid-area: immg5; 
+    }
+    .image5{
+        grid-area: immg6; 
+    }
+    .image6{
+        grid-area: immg7; 
+    }
+    .image7{
+        grid-area: immg8; 
+    }
+    .image8{
+        grid-area: immg9; 
+    }
+    .image9{
+        grid-area: immg0; 
+    }
+
+}
